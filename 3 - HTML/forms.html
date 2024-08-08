@@ -1,0 +1,68 @@
+<!-- ! then hit the TAB key -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- Form - collect user input -->
+    <form>
+        <h3>Sample Form</h3>
+        <div>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input 
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                required
+            >
+        </div>
+
+        <div>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input 
+                type="email"
+                name="email"
+                id="email"
+                placeholder="john.doe@mail.com"
+                required
+            >
+        </div>
+
+        <div>
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input 
+                type="password"
+                name="password"
+                id="password"
+                placeholder="8-32 characters"
+                minlength="8"
+                maxlength="32"
+                required
+            >
+        </div>
+
+        <div>
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input 
+                type="number"
+                name="age"
+                id="age"
+                placeholder="30"
+                min="13"
+                max="100"
+                required
+            >
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
