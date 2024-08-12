@@ -1,0 +1,45 @@
+/* Element Selector */
+span {
+    color: red;
+    background-color: aquamarine;
+}
+
+/* Class Selector */
+.intro-paragraphs {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ID Selector */
+#main-heading {
+    line-height: 8;
+    letter-spacing: 2px;
+}
+
+/* Universal Selector */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grouping Selector */
+h1, h2, .about-content {
+    color: tomato;
+}
+
+
+/* Descendant Selector */
+.article-container p {
+    text-decoration: underline overline;
+    background-color: bisque;
+}
+
+/* Pseudo Classes */
+a:hover {
+    font-size: 20px;
+    color: green;
+}
+
+a:active {
+    color: red;
+    font-size: 18px;
+}

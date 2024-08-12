@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics: Typography, Text Decoration, Colors and Unit of Measurement</title>
+
+    <!-- Internal Styling -->
+    <style>
+        #text-styling {
+            /* Times New Roman */
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* Keyword Values */
+            font-weight: normal;
+            font-weight: bold;
+            font-weight: bolder;
+
+            /* Numerical Values */
+            font-weight: 400;
+            font-weight: 700;
+            font-weight: 900;
+
+            font-style: normal;
+            font-style: italic;
+            
+            text-align: left;
+            text-align: right;
+            text-align: center;
+
+            line-height: 8;
+            line-height: 24px;
+
+            letter-spacing: 4px;
+            letter-spacing: -2px;
+        }
+
+        #text-decoration {
+            text-decoration: none;
+            text-decoration: line-through;
+            text-decoration: underline;
+            text-decoration: overline;
+            text-decoration: underline overline line-through;
+        }
+
+        #colors {
+            /* Color names */
+            color: red;
+            background-color: bisque;
+
+            /* RGB/RGBA */
+            /* 0 - 255 */
+            /* 0(Transparent) - 1 (Opaque) */
+            color: rgb(0, 255, 0);
+            background-color: rgba(41, 35, 221, 0.82);
+
+            /* Hexadecimal */
+            /* 0 - 9 A - F */
+            color: #0000FF;
+            background-color: #e7e01b;
+        }
+
+        #absolute-unit {
+            font-size: 18px;
+        }
+
+        /* Relative to the parent container */
+        #relative-unit-em {
+            font-size: 3em;
+        }
+        
+        /* Relative to the root element/html tag */
+        #relative-unit-rem {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Typography</h2>
+    <p id="text-styling">This is a sample sentence.</p>
+
+    <h2>CSS Text Decoration</h2>
+    <p id="text-decoration">This is a sample sentence.</p>
+
+    <h2>CSS Colors</h2>
+    <p id="colors">This is a colorful sentence.</p>
+
+    <h2>CSS Units of Measurement</h2>
+    <p id="absolute-unit">Absolute Unit(px)</p>
+    <div style="font-size: 20px;">
+        <p id="relative-unit-em">Relative Unit(em)</p>
+        <p id="relative-unit-rem">Relative Unit(rem)</p>
+    </div>
+</body>
+</html>

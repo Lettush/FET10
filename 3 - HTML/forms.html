@@ -62,6 +62,29 @@
             >
         </div>
 
+        <div>
+            <label for="message">Message:</label>
+            <textarea 
+                name="message" 
+                id="message"
+                placeholder="Let's talk!"
+                cols="40"
+                rows="5"
+                style="resize: none;"
+            ></textarea>
+        </div>
+
+        <div>
+            <label for="favorite-food">Favorite Food:</label>
+            <select name="favorite-food" id="favorite-food">
+                <option value="" selected disabled hidden>-- Select Your Food --</option>
+                <option value="pizza">Pizza</option>
+                <option value="pasta">Pasta</option>
+                <option value="ramen">Ramen</option>
+            </select>
+        </div>
+
+        <button type="reset">Reset</button>
         <button type="submit">Submit</button>
     </form>
 </body>
