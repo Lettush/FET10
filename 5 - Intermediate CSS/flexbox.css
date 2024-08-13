@@ -1,0 +1,33 @@
+.flexContainer {
+    display: flex;
+
+    flex-direction: row;
+    /* flex-direction: column; */
+
+    /* justify-content: main axis guide. */
+    justify-content: flex-start;
+    /* justify-content: flex-end;
+    justify-content: center; */
+
+    /* align-items: cross axis guide. */
+    align-items: stretch;
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: center; */
+
+    flex-wrap: nowrap; /* Default */
+    /* flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+}
+
+/* Willingness to grow */
+.flexItem1 {
+    flex-grow: 0; 
+    flex-grow: 1;
+}
+
+/* Willingness to shrink */
+.flexItem2 {
+    flex-shrink: 1;
+    flex-shrink: 0;
+}
